@@ -9,11 +9,11 @@ $(document).ready(function () {
       if(scwidth >= 1281) {
         if(scheight > 100){
           $("header, .sub").css({"backgroundColor":"#fff"})
-          $(".gnb .main>a, .sub li a").css({"color":"#333"})
+          $(".gnb .main>a, .sub li a, .fontIcon").css({"color":"#333"})
           console.log(scheight)
         } else {
           $("header, .sub").css({"backgroundColor":"transparent"})
-          $(".gnb .main>a, .sub li a").css({"color":"#fff"})
+          $(".gnb .main>a, .sub li a, .fontIcon").css({"color":"#fff"})
         }
 
       } else if(scwidth >= 1024 && scwidth < 1281) {
