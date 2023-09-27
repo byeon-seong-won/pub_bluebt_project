@@ -91,9 +91,11 @@
 #slick-slide-control04:before {content: '05';}
 #slick-slide-control05:before {content: '06';}
 #slick-slide-control06:before {content: '07';}
-.shop>div.center>div.menu_con_total>div.menu>div {width: 460px;height: 530px;position: relative;cursor: pointer;}
-.shop>div.center>div.menu_con_total>div.menu>div:hover {width: 460px;height: 530px;}
-.shop>div.center>div.menu_con_total>div.menu>div:hover:before {
+
+.menu>div {width: 460px;height: 530px;position: relative;cursor: pointer;}
+.menu>div:nth-child(1) {margin-bottom: 20px;} 
+.menu>div:hover {width: 460px;height: 530px;}
+.menu>div:hover:before {
   bottom: 55px;
   left: 50%;
   transform: translate(-50%);
@@ -102,9 +104,9 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div:nth-child(1) {margin-bottom: 20px;} 
-.shop>div.center>div.menu_con_total>div.menu>div.menu01 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu01:before {
+
+.menu01 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu01:before {
   content: 'THREE AFRICAS';
   position: absolute;
   bottom: 55px;
@@ -115,8 +117,8 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu01:hover {background: url(../image/menu_hover01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu01:hover:after {
+.menu01:hover {background: url(../image/menu_hover01.png) no-repeat center center;}
+.menu01:hover:after {
   content: 'SHOP NOW  ₩ 25000';
   line-height: 50px;
   position: absolute;
@@ -127,9 +129,8 @@
   background-color: #555;
   color: #fff;
 }
-
-.shop>div.center>div.menu_con_total>div.menu>div.menu02 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu02:before {
+.menu02 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu02:before {
   content: 'BELLA DONOVAN';
   position: absolute;
   bottom: 55px;
@@ -140,8 +141,8 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu02:hover {background: url(../image/menu_hover02.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu02:hover:after {
+.menu02:hover {background: url(../image/menu_hover02.png) no-repeat center center;}
+.menu02:hover:after {
   content: 'SHOP NOW  ₩ 25000';
   line-height: 50px;
   position: absolute;
@@ -152,10 +153,9 @@
   background-color: #555;
   color: #fff;
 }
-
-.shop>div.center>div.menu_con_total>div.menu>div.menu03 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu03:hover {background: url(../image/menu_hover03.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu03:before {
+.menu03 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu03:hover {background: url(../image/menu_hover03.png) no-repeat center center;}
+.menu03:before {
   content: 'GIANT STEPS';
   position: absolute;
   bottom: 55px;
@@ -166,7 +166,7 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu03:hover:after {
+.menu03:hover:after {
   content: 'SHOP NOW  ₩ 25000';
   line-height: 50px;
   position: absolute;
@@ -178,9 +178,9 @@
   color: #fff;
 }
 
-.shop>div.center>div.menu_con_total>div.menu>div.menu04 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div:hover {background: url(../image/menu_hover04.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div:before {
+.menu04 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu04:hover {background: url(../image/menu_hover04.png) no-repeat center center;}
+.menu04:before {
   content: 'COSTA RICA RIVENSE BLACK HONEY';
   position: absolute;
   bottom: 55px;
@@ -191,7 +191,7 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div:hover:after {
+.menu04:hover:after {
   content: 'SHOP NOW  ₩ 35000';
   line-height: 50px;
   position: absolute;
@@ -203,9 +203,9 @@
   color: #fff;
 }
 
-.shop>div.center>div.menu_con_total>div.menu>div.menu05 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu05:hover {background: url(../image/menu_hover05.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu05:before {
+.menu05 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu05:hover {background: url(../image/menu_hover05.png) no-repeat center center;}
+.menu05:before {
   content: 'KENYA KIRINYAGA KIAMUGUMO';
   position: absolute;
   bottom: 55px;
@@ -216,7 +216,7 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu05:hover:after {
+.menu05:hover:after {
   content: 'SHOP NOW  ₩ 35000';
   line-height: 50px;
   position: absolute;
@@ -228,9 +228,9 @@
   color: #fff;
 }
 
-.shop>div.center>div.menu_con_total>div.menu>div.menu06 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu06:hover {background: url(../image/menu_hover06.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu06:before {
+.menu06 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu06:hover {background: url(../image/menu_hover06.png) no-repeat center center;}
+.menu06:before {
   content: 'HAYES VALLEY ESPRESSO';
   position: absolute;
   bottom: 55px;
@@ -241,7 +241,7 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu06:hover:after {
+.menu06:hover:after {
   content: 'SHOP NOW  ₩ 35000';
   line-height: 50px;
   position: absolute;
@@ -252,10 +252,9 @@
   background-color: #555;
   color: #fff;
 }
-
-.shop>div.center>div.menu_con_total>div.menu>div.menu07 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu07:hover {background: url(../image/menu_hover07.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu07:before {
+.menu07 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu07:hover {background: url(../image/menu_hover07.png) no-repeat center center;}
+.menu07:before {
   content: 'COLOMBIA MAURICIO SHATTAH';
   position: absolute;
   bottom: 55px;
@@ -266,7 +265,7 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu07:hover:after {
+.menu07:hover:after {
   content: 'SHOP NOW  ₩ 35000';
   line-height: 50px;
   position: absolute;
@@ -278,9 +277,9 @@
   color: #fff;
 }
 
-.shop>div.center>div.menu_con_total>div.menu>div.menu08 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu08:hover {background: url(../image/menu_hover08.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu08:before {
+.menu08 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu08:hover {background: url(../image/menu_hover08.png) no-repeat center center;}
+.menu08:before {
   content: 'NIGHT LIGHT DECAF';
   position: absolute;
   bottom: 55px;
@@ -291,7 +290,7 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu08:hover:after {
+.menu08:hover:after {
   content: 'SHOP NOW  ₩ 35000';
   line-height: 50px;
   position: absolute;
@@ -303,9 +302,9 @@
   color: #fff;
 }
 
-.shop>div.center>div.menu_con_total>div.menu>div.menu09 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu09:hover {background: url(../image/menu_hover09.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu09:before {
+.menu09 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu09:hover {background: url(../image/menu_hover09.png) no-repeat center center;}
+.menu09:before {
   content: 'SUMATRA KERINCI SOLOK';
   position: absolute;
   bottom: 55px;
@@ -316,7 +315,7 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu09:hover:after {
+.menu09:hover:after {
   content: 'SHOP NOW  ₩ 35000';
   line-height: 50px;
   position: absolute;
@@ -328,9 +327,9 @@
   color: #fff;
 }
 
-.shop>div.center>div.menu_con_total>div.menu>div.menu10 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu10:hover {background: url(../image/mer_hover01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu10:before {
+.menu10 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu10:hover {background: url(../image/mer_hover01.png) no-repeat center center;}
+.menu10:before {
   content: 'BETA BLEND';
   position: absolute;
   bottom: 55px;
@@ -341,7 +340,7 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu10:hover:after {
+.menu10:hover:after {
   content: 'SHOP NOW  ₩ 35000';
   line-height: 50px;
   position: absolute;
@@ -354,9 +353,9 @@
 }
 
 
-.shop>div.center>div.menu_con_total>div.menu>div.menu11 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu11:hover {background: url(../image/mer_hover02.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu11:before {
+.menu11 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu11:hover {background: url(../image/mer_hover02.png) no-repeat center center;}
+.menu11:before {
   content: 'SINGLE ORIGIN';
   position: absolute;
   bottom: 55px;
@@ -367,7 +366,7 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu11:hover:after {
+.menu11:hover:after {
   content: 'SHOP NOW  ₩ 35000';
   line-height: 50px;
   position: absolute;
@@ -379,9 +378,9 @@
   color: #fff;
 }
 
-.shop>div.center>div.menu_con_total>div.menu>div.menu12 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu12:hover {background: url(../image/mer_hover03.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu12:before {
+.menu12 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu12:hover {background: url(../image/mer_hover03.png) no-repeat center center;}
+.menu12:before {
   content: 'BURUNDRI KAYANZA HEZA';
   position: absolute;
   bottom: 55px;
@@ -392,7 +391,7 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu12:hover:after {
+.menu12:hover:after {
   content: 'SHOP NOW  ₩ 35000';
   line-height: 50px;
   position: absolute;
@@ -404,9 +403,9 @@
   color: #fff;
 }
 
-.shop>div.center>div.menu_con_total>div.menu>div.menu13 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu13:hover {background: url(../image/mer_hover04.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu13:before {
+.menu13 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu13:hover {background: url(../image/mer_hover04.png) no-repeat center center;}
+.menu13:before {
   content: 'ETHIOPIA NATURAL DECAF';
   position: absolute;
   bottom: 55px;
@@ -417,7 +416,7 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu13:hover:after {
+.menu13:hover:after {
   content: 'SHOP NOW  ₩ 35000';
   line-height: 50px;
   position: absolute;
@@ -428,9 +427,9 @@
   background-color: #555;
   color: #fff;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu14 {background: url(../image/menu_01.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu14:hover {background: url(../image/mer_hover05.png) no-repeat center center;}
-.shop>div.center>div.menu_con_total>div.menu>div.menu14:before {
+.menu14 {background: url(../image/menu_01.png) no-repeat center center;}
+.menu14:hover {background: url(../image/mer_hover05.png) no-repeat center center;}
+.menu14:before {
   content: 'VIETNAM DA LAT HONEY';
   position: absolute;
   bottom: 55px;
@@ -441,7 +440,7 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
-.shop>div.center>div.menu_con_total>div.menu>div.menu14:hover:after {
+.menu14:hover:after {
   content: 'SHOP NOW  ₩ 35000';
   line-height: 50px;
   position: absolute;
@@ -616,8 +615,13 @@
   color: #333;
   border: 1px solid #000;
   padding: 15px 25px; 
+  z-index: 10;
 }
-.brew>div.brew_total>div.brew_center>div.brews>div.title_flex .left_text .startGuide:hover {background-color: #555;color: #fff;cursor: pointer;}
+.brew>div.brew_total>div.brew_center>div.brews>div.title_flex .left_text .startGuide:hover {
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
 .brew>div.brew_total>div.brew_center>div.brews>div.title_flex .left_text .startGuide em {font-weight: 400;font-style: normal;}
 .brew>div.brew_total>div.brew_center>div.brews>div.title_flex .left_text .startGuide span {margin-left: 10px;}
 
@@ -651,6 +655,7 @@
   width: 650px;
   font-size: 17px;
   font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 }
 .about>div.aboutText>div.aboutTitle_flex .flex_icon {display: flex;flex-direction: column; }
 .about>div.aboutText>div.aboutTitle_flex .flex_icon .aboutFontIcon {
@@ -681,6 +686,7 @@
   width: 650px;
   font-size: 17px;
   font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 }
 .about>div.aboutText>div.aboutTitle_flex .flex_icon>h4>span.titleBottle {display: inline-block;margin-top: 18px;font-weight: 500;color: #666;}
 .about>div.aboutText>div.aboutTitle_flex .flex_icon>h5>span.titleBottlespan {display: inline-block;margin-top: 18px;font-weight: 500;}
@@ -777,8 +783,7 @@
   overflow: hidden;
 }
 .about>div.aboutText>div.aboutFlex>div.ABOUT>div.about_textFlex .aboutSlick .aboutBottomImg img {width: 200px;height: 120px;}
-.about>div.aboutText>div.aboutFlex>div.ABOUT>div.about_textFlex .aboutSlick .aboutBottomImg img:hover{cursor: pointer;}
-.about>div.aboutText>div.aboutFlex>div.ABOUT>div.about_textFlex .aboutSlick .aboutBottomImg .slick-prev.slick-arrow{width: 30px;height: 40px;left: 0;z-index: 1000;}
+.about>div.aboutText>div.aboutFlex>div.ABOUT>div.about_textFlex .aboutSlick .aboutBottomImg .slick-prev.slick-arrow {width: 30px;height: 40px;left: 0;z-index: 1000;}
 .about>div.aboutText>div.aboutFlex>div.ABOUT>div.about_textFlex .aboutSlick .aboutBottomImg .slick-prev.slick-arrow:before,
 .about>div.aboutText>div.aboutFlex>div.ABOUT>div.about_textFlex .aboutSlick .aboutBottomImg .slick-next.slick-arrow:before {
   font-family: 'Material Icons Outlined';
@@ -799,16 +804,17 @@
 
 
 
-
-#cafe {
-  width: 100%;
-  padding-top: 90px;
+/* cafe */
+.cafe {width: 100%;padding-top: 90px;text-align: center;margin: 25px auto 0;height: 900px;}
+.cafe>div.storeTitle {
+  width: 1400px;
+  margin: auto;
   text-align: center;
-  margin: 25px auto 0;
-  height: 900px;
-  /* background-color: #fdfbf7; */
+  background-color: rgba(255, 255, 255,0.65);
+  border-radius: 40px;
+  padding: 30px;
 }
-.cafes {
+.cafe>div.storeTitle>div.cafeImgTotal .cafes {
   display: flex;
   width:73%;
   margin: auto;
@@ -817,7 +823,7 @@
   border-radius: 15px;
 }
 
-.storeImgTitle {
+.cafe>div.storeTitle>div.storeImgTitle {
   width: 1200px;
   height: 200px;
   padding-bottom: 30px;
@@ -826,21 +832,16 @@
   position: relative;
   justify-content: space-between;
 }
-.firstTitle {
-  padding-top: 100px;
-  position: absolute;
-  left: 500px;
-  height: 250px;
-  flex: 3;
-}
-.firstTitle p:nth-of-type(1) {
+.cafe>div.storeTitle>div.storeImgTitle .firstTitle h3 {font-size: 40px;display: inline-block;font-weight: 600;color: #333;font-family: 'Montserrat', sans-serif;}
+.cafe>div.storeTitle>div.storeImgTitle .firstTitle {padding-top: 100px;position: absolute;left: 500px;height: 250px;flex: 3;}
+.cafe>div.storeTitle>div.storeImgTitle .firstTitle p:nth-of-type(1) {
   margin-top: 40px;
   color: #444;
   font-weight: 500;
   margin-left: 45px;
   width: 600px;
 }
-.firstTitle p:nth-of-type(2) {
+.cafe>div.storeTitle>div.storeImgTitle .firstTitle p:nth-of-type(2) {
   margin-top: 60px;
   font-size: 25px;
   font-weight: 500;
@@ -851,13 +852,19 @@
   margin-left: 148px;
   border: 1px solid #555;
 }
-.firstTitle p:nth-of-type(2):hover {
-  background-color: #555;
-  color: #fff;
-  cursor: pointer;
+.cafe>div.storeTitle>div.storeImgTitle .firstTitle p:nth-of-type(2):hover {background-color: #555;color: #fff;cursor: pointer;}
+.cafe>div.storeTitle>div.storeImgTitle .firstTitle span.ani_store {font-family: 'Montserrat', sans-serif;font-size: 48px;font-weight: 500;margin-left: 15px;position: relative;color: #333;  }
+.cafe>div.storeTitle>div.storeImgTitle .firstTitle span.ani_store:before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 169, 224,0.65);
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
-.cafeBluebottle {
+.cafe>div.storeTitle>div.storeImgTitle .cafeBluebottle {
   position: absolute;
   margin-left: 50px;
   flex: 3;
@@ -868,22 +875,18 @@
   height: 350px;
   animation: bluebottleAni 1.5s infinite alternate;
 }
-
-  @keyframes bluebottleAni {
-    0% {
-  
-    }
-    100% {
-      margin-top: 30px;
-      background: url(../image/ani.jpg) center center;
-      background-size: cover;
-      position: absolute;
-      width: 400px;
-      height: 350px;
-    }
+@keyframes bluebottleAni {
+  100% {
+    margin-top: 30px;
+    background: url(../image/ani.jpg) center center;
+    background-size: cover;
+    position: absolute;
+    width: 400px;
+    height: 350px;
   }
-
-.cafes label {
+}
+.cafe>div.storeTitle>div.cafeImgTotal {width: inherit;height: 600px;margin: auto;margin-top: 170px;position: relative;}
+.cafe>div.storeTitle>div.cafeImgTotal .cafes>label {
   margin-right: 25px;
   font-size: 15px;
   color: #777;
@@ -891,65 +894,31 @@
   cursor: pointer;
   transition: 0.5s;
 }
-.cafes label:hover {
-  color: #333;
-  font-weight: 500;
-  font-size: 17px;
-  border-bottom: 1px solid #333;
-}
-.cafes label:nth-child(1) {
-  margin-left: 23px;
-}
+.cafe>div.storeTitle>div.cafeImgTotal .cafes>label:hover {color: #333;font-weight: 500;font-size: 17px;border-bottom: 1px solid #333;}
+.cafe>div.storeTitle>div.cafeImgTotal .cafes>label:nth-child(1) {margin-left: 23px;}
 
+.cafe>div.storeTitle>div.cafeImgTotal>input[name=cafeul] {display: none;}
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_01]:checked ~.cafes label[for=tab_01],
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_02]:checked ~.cafes label[for=tab_02],
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_03]:checked ~.cafes label[for=tab_03],
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_04]:checked ~.cafes label[for=tab_04],
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_05]:checked ~.cafes label[for=tab_05],
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_06]:checked ~.cafes label[for=tab_06],
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_07]:checked ~.cafes label[for=tab_07],
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_08]:checked ~.cafes label[for=tab_08] {color: #333;font-weight: 500;font-size: 19px;border-bottom: 1px solid #333;}
 
-.cafeImgTotal {
-  width: inherit;
-  height: 600px;
-  margin: auto;
-  margin-top: 170px;
-  position: relative;
-}
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_01]:checked ~.store01,
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_02]:checked ~.store02,
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_03]:checked ~.store03,
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_04]:checked ~.store04,
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_05]:checked ~.store05,
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_06]:checked ~.store06,
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_07]:checked ~.store07,
+.cafe>div.storeTitle>div.cafeImgTotal>input[id=tab_08]:checked ~.store08 {opacity: 1;transition: 0.5s;}
 
-.cafeImgTotal ul {
-  display: flex;
-  height: inherit;
-  align-items: center;
-  position: relative;
-  flex: 2;
-  height: inherit;
-}
-.cafeImgTotal ul li {
-  overflow: hidden;
-}
-.storeImgFLex {
-  flex: 3;
-  height: 420px;
-  box-sizing: border-box;
-}
-.storeImgFLex img {
-  width: 640px;
-  height: 420px;
-  top: 0;
-}
-
-
-.storeTitle {
-  width: 1400px;
-  margin: auto;
-  text-align: center;
-  background-color: rgba(255, 255, 255,0.65);
-  border-radius: 40px;
-  padding: 30px;
-}
-
-.storeTitle h3 {
-  font-size: 40px;
-  display: inline-block;
-  font-weight: 600;
-  color: #333;
-  
-}
-.storeText {
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .storeImgFLex {flex: 3;height: 420px;box-sizing: border-box;}
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .storeImgFLex img {width: 640px;height: 420px;top: 0;}
+.cafe>div.storeTitle>div.cafeImgTotal .storeText {
   text-align: center;
   height: 500px;
   display: flex;
@@ -961,45 +930,7 @@
   padding: 10px;
   opacity: 0;
 }
-.ani_store {
-  font-size: 48px;
-  font-weight: 500;
-  margin-left: 15px;
-  position: relative;
-  color: #333;  
-}
-input[name=cafeul] {
-  display: none;
-}
-
-input[id=tab_01]:checked ~.cafes label[for=tab_01],
-input[id=tab_02]:checked ~.cafes label[for=tab_02],
-input[id=tab_03]:checked ~.cafes label[for=tab_03],
-input[id=tab_04]:checked ~.cafes label[for=tab_04],
-input[id=tab_05]:checked ~.cafes label[for=tab_05],
-input[id=tab_06]:checked ~.cafes label[for=tab_06],
-input[id=tab_07]:checked ~.cafes label[for=tab_07],
-input[id=tab_08]:checked ~.cafes label[for=tab_08] {
-  color: #333;
-  font-weight: 500;
-  font-size: 19px;
-  border-bottom: 1px solid #333;
-}
-
-input[id=tab_01]:checked ~.store01,
-input[id=tab_02]:checked ~.store02,
-input[id=tab_03]:checked ~.store03,
-input[id=tab_04]:checked ~.store04,
-input[id=tab_05]:checked ~.store05,
-input[id=tab_06]:checked ~.store06,
-input[id=tab_07]:checked ~.store07,
-input[id=tab_08]:checked ~.store08 {
-  opacity: 1;
-  transition: 0.5s;
-}
-
-
-.detailStore {
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .detailStore {
   display: flex;
   flex: 3;
   flex-direction: column;
@@ -1010,32 +941,8 @@ input[id=tab_08]:checked ~.store08 {
   padding: 25px;
   box-sizing: border-box;
 }
-.store_location {
-  margin-bottom: 10px;
-  position: relative;
-}
-.bottomCafe {
-  padding-top: 35px;
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-}
-
-.bottomCafe .cafeImg {
-  margin-top: 50px;
-  text-align: center;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-.bottomCafe p {
-  font-weight: 500;
-  color: #666;
-  font-size: 17px;
-
-}
-
-.store_location h3{
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .detailStore .store_location {margin-bottom: 10px;position: relative;}
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .detailStore .store_location>h3 {
   border-bottom: 1px solid rgba(153, 153, 153,0.2);
   padding-bottom: 20px;
   display: block;
@@ -1045,51 +952,10 @@ input[id=tab_08]:checked ~.store08 {
   font-size: 38px;
   color: #555;
 }
-.store_location p {
-  font-weight: 500;
-  color: #888;
-  margin-top: 5px;
-  flex: 3;
-}
-
-.detailStore p:nth-of-type(2) {
-  margin-top: 5px;
-}
-.lastText {
-  font-style: normal;
-  display: inline-block;
-  width: 350px;
-  color: #444;
-  font-weight: 400;
-  font-size: 18px;
-  
-}
-.cafe_bottomFlex {
-  display: flex;
-  height: inherit;
-  box-sizing: border-box;
-  padding-bottom: 10px;
-}
-.hoursThisweek {
-  margin-top: 38px;
-  flex: 2;
-  border-right: 2px solid rgba(153, 153, 153,0.1);
-  transform: translateY(-7px);
-}
-
-.cafeImg img {
-  margin-top: 10px;
-  width: 280px;
-  height: 160px;
-  margin: 3px;
-  border-radius: 30px;
-}
-
-.storeDetail {
-  padding-top: 20px;
-  text-align: center;
-} 
-.storeDetail span {
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .detailStore .cafe_bottomFlex {display: flex;height: inherit;box-sizing: border-box;padding-bottom: 10px;}
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .detailStore .cafe_bottomFlex .hoursThisweek {margin-top: 38px;flex: 2;border-right: 2px solid rgba(153, 153, 153,0.1);transform: translateY(-7px);}
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .detailStore .cafe_bottomFlex .hoursThisweek .storeDetail {padding-top: 20px;text-align: center;} 
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .detailStore .cafe_bottomFlex .hoursThisweek .storeDetail>span {
   display: inline-block;
   background-color: #777;
   height: 28px;
@@ -1101,194 +967,15 @@ input[id=tab_08]:checked ~.store08 {
   font-size: 17px;
   font-weight: 500;
 }
-.storeDetail em {
-  font-style: normal;
-  font-size: 15px;
-  font-weight: 500;
-  color: #444;
-}
-.ani_store:before {
-  content: '';
-  position: absolute;
-  background-color: rgba(0, 169, 224,0.65);
-  width: 100%;
-  height: 0;
-  bottom: 0;
-  z-index: -1;
-}
-@keyframes storeAni {
-  0% {
-
-  }
-  100% {
-    height: 20%;
-  }
-}
-
-.photoContainer {
-  width: 100%;
-  display: flex;
-}
-.photoContainer img {
-  width: 250px;
-}
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .detailStore .cafe_bottomFlex .hoursThisweek .storeDetail>em {font-style: normal;font-size: 15px;font-weight: 500;color: #444;}
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .detailStore .cafe_bottomFlex .bottomCafe {padding-top: 35px;flex: 2;display: flex;flex-direction: column;}
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .detailStore .cafe_bottomFlex .bottomCafe .cafeImg {margin-top: 50px;text-align: center;margin: auto;display: flex;flex-direction: column;}
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .detailStore .cafe_bottomFlex .bottomCafe .cafeImg img {margin-top: 10px;width: 280px;height: 160px;margin: 3px;border-radius: 30px;}
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .detailStore .cafe_bottomFlex .bottomCafe>p {font-weight: 500;color: #666;font-size: 17px;}
 
 
 
-/* footer */
 
-footer {
-  margin-top: 170px;
-  width: 100%;
-  background-color: #fdfbf7;
-}
-.img_text img{
-  width: 100%;
-  height: 500px;
-}
-.footer_textImg {
-  width: 1280px;
-  padding-top: 50px;
-  margin: auto;
-  text-align: center;
-  overflow: hidden;
-}
-.footer_textImg h3 {
-  letter-spacing: -3px;
-  font-size: 30px;
-  color: #333;
-  font-weight: 500;
-
-}
-.footer_textImg h4 {
-  margin-top: 40px;
-  font-size: 21px;
-  color: #00a9e0;
-  letter-spacing: -1px;
-  font-weight: 500;
-}
-.INSTAGRAM {
-  margin: auto;
-}
-.instagram_img {
-  margin: auto;
-  margin-top: 40px;
-  position: relative;
-}
-.instagram_img div {
-  width: 1285px;
-  height: 200px;
-}
-.instagram_img img{
-  position: relative;
-  width: 250px;
-  height: 200px;
-}
-
-.footerMenu {
-  margin-top: 100px;
-  color: #fff;
-  background-color: #464646;
-  padding: 35px 0;
-}
-
-.bottomFooter  {
-  margin-top: 40px;
-  padding-bottom: 35px;
-  padding-left: 70px;
-  font-size: 13px;
-  letter-spacing: 2px;
-}
-.bottomFooter span {
-  margin-left: 100px;
-}
-
-.footerMenu h4 {
-  text-align: left;
-  padding-top: 40px;
-  font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-.footer_menu {
-  padding-left: 110px;
-  display: flex;
-  justify-content: space-between;
-  width: 1150px;
-  text-align: left; 
-  padding-bottom: 30px;
-} 
-.footer_menu ul {
-  margin-top: 15px;
-  margin-left: 3px;
-}
-.footer_menu ul li:hover {
-  opacity: 0.6;
-  cursor: pointer;
-}
-
-.footer_menu ul li {
-  font-size: 12px;
-  color: #ddd;
-  margin-bottom: 10px;
-}
-.footer_menu ul>li:nth-child(1) {
-  margin-bottom: 30px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #eee;
-} 
-.instagram_img .slick-prev {
-  position: absolute;
-  left: 0;
-  z-index: 1000;
-  height: 40px;
-  width: 30px;
-}
-.instagram_img .slick-prev:before {
-  content: '\e5e0';
-  top: 0;
-  left: 0;
-}
-.instagram_img .slick-next {
-  position: absolute;
-  right: 2px;
-  z-index: 1000;
-  height: 40px;
-  width: 30px;
-}
-.instagram_img .slick-next:before {
-  content: '\e5e1';
-  top: 0;
-  right: 0;
-}
-.instagram_img .slick-prev:before, 
-.instagram_img .slick-next:before {
-  font-family: 'Material Icons Outlined';
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  line-height: 40px;
-  color: #fff;
-  background-color: rgba(51, 51, 51,0.7);
-}
-.instagram_img .slick-dots {
-  display: none !important;
-}
-
-.bottomLogo {
-  text-align: right;
-  border: 1px solid #333;
-  transform: translateY(180px);
-  width: 130px;
-  height: 100px;
-  z-index: 1000;
-}
-.bottomLogo img {
-  width: 130px;
-  height: 100px;
-  z-index: 1000;
-}
 
 
 

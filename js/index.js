@@ -38,7 +38,7 @@ $(document).ready(function () {
 
 
 
-
+  // header - submenu
   $(".main").hover(function() {
     $(this).find(".submenu").stop().slideDown();
   }, function() {
@@ -53,8 +53,7 @@ $(document).ready(function () {
    
 
 
-  /* 메인 비주얼    */
-
+  /* 메인 비주얼 */
   let $img = $(".changeimg ul li");
   let $btn = $(".index ul li");
   let oldidx=0;
@@ -80,7 +79,6 @@ $(document).ready(function () {
   }
   changeImg(idx);
 }
-
   timer=setInterval(changeAuto,6000);
 
   $btn.click(function() {
@@ -98,6 +96,15 @@ $(document).ready(function () {
 
 
  
+
+  // menu slick
+  $('.shop>div.center>div.menu_con_total').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 300,
+    dots: true
+  })
 
 
 
@@ -140,85 +147,11 @@ $(document).ready(function () {
   });
 
 
-
-  let aboutPATH=0;
-  $(".aboutBottomImg01-01 div img").click(function(){
+  // 썸네일 클릭시 
+  let aboutPATH;
+  $(".aboutBottomImg div img").click(function(){
     let aboutPATH=$(this).attr("src");
-  
-    $(".aboutImg01").css({"background":`url(${aboutPATH})`}).hide().fadeIn();
-    
-  });
-
-  let aboutPATH2=0;
-  $(".aboutBottomImg01-02 div img").click(function(){
-    let aboutPATH2=$(this).attr("src");
-  
-    $(".aboutImg02").css({"background":`url(${aboutPATH2})`}).hide().fadeIn();
-    
-  });
-  let aboutPATH3=0;
-  $(".aboutBottomImg01-03 div img").click(function(){
-    let aboutPATH3=$(this).attr("src");
-  
-    $(".aboutImg03").css({"background":`url(${aboutPATH3})`}).hide().fadeIn();
-    
-  });
-  let aboutPATH4=0;
-  $(".aboutBottomImg01-04 div img").click(function(){
-    let aboutPATH4=$(this).attr("src");
-  
-    $(".aboutImg04").css({"background":`url(${aboutPATH4})`}).hide().fadeIn();
-    
-  });
-  let aboutPATH5=0;
-  $(".aboutBottomImg01-05 div img").click(function(){
-    let aboutPATH5=$(this).attr("src");
-  
-    $(".aboutImg05").css({"background":`url(${aboutPATH5})`}).hide().fadeIn();
-    
-  });
-  let aboutPATH6=0;
-  $(".aboutBottomImg01-06 div img").click(function(){
-    let aboutPATH6=$(this).attr("src");
-  
-    $(".aboutImg06").css({"background":`url(${aboutPATH6})`}).hide().fadeIn();
-    
-  });
-  let aboutPATH7=0;
-  $(".aboutBottomImg01-07 div img").click(function(){
-
-    let aboutPATH7=$(this).attr("src");
-  
-    $(".aboutImg07").css({"background":`url(${aboutPATH7})`}).hide().fadeIn();
-    
-  });
-  let aboutPATH8=0;
-  $(".aboutBottomImg01-08 div img").click(function(){
-    let aboutPATH8=$(this).attr("src");
-  
-    $(".aboutImg08").css({"background":`url(${aboutPATH8})`}).hide().fadeIn();
-    
-  });
-  let aboutPATH9=0;
-  $(".aboutBottomImg01-09 div img").click(function(){
-    let aboutPATH9=$(this).attr("src");
-  
-    $(".aboutImg09").css({"background":`url(${aboutPATH9})`}).hide().fadeIn();
-    
-  });
-  let aboutPATH10=0;
-  $(".aboutBottomImg01-10 div img").click(function(){
-    let aboutPATH10=$(this).attr("src");
-  
-    $(".aboutImg10").css({"background":`url(${aboutPATH10})`}).hide().fadeIn();
-    
-  });
-  let aboutPATH11=0;
-  $(".aboutBottomImg01-11 div img").click(function(){
-    let aboutPATH11=$(this).attr("src");
-  
-    $(".aboutImg11").css({"background":`url(${aboutPATH11})`}).hide().fadeIn();
-    
+    $(".aboutIMG").css({"background":`url(${aboutPATH})`}).hide().fadeIn();
   });
 
 
@@ -228,62 +161,26 @@ $(document).ready(function () {
 
 
 
+  // footer slick 
 
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-$('.menu_con_total').slick({
+  $('.footerImg_img1').slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     speed: 300,
-    dots: true
-})
+    dots: true,
+    autoplay: true,     
+    autoplaySpeed: 3000
+  });
 
-$('.instagram_img1').slick({
-  infinite: true,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  speed: 300,
-  dots: true,
-  autoplay: true,     
-  autoplaySpeed: 3000
-});
-
-
-$('.instagram_img2').slick({
-  infinite: true,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  speed: 400,
-  dots: true,
-  autoplay: true,    
-  autoplaySpeed: 2000
-});
-
-
-
-  $('.aboutBottomImg01-01').slick({
-    infinite: false,
-    slidesToShow: 3,
+  $('.footerImg_img2').slick({
+    infinite: true,
+    slidesToShow: 5,
     slidesToScroll: 1,
-    speed: 300,
+    speed: 400,
+    dots: true,
+    autoplay: true,    
+    autoplaySpeed: 2000
   });
 
  
