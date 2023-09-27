@@ -62,55 +62,129 @@
 
 
 
-*{  /* 전체선택자 (* : 모든 태그에 여백을 빼줌) */
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-html {
-  overflow-y: scroll;     /* 문서전체에 세로 스크롤바 자국 항상 표시 */
-  overflow-x: hidden;     /* 문서전체에 가로 스크롤바 자국 항상 숨김 */
-}
-
-body {
-  font-family: 'Noto Sans KR', sans-serif;
-}
-
-/* 시멘틱태그를 지원하지 않는 브라우저에서 inline으로 인식하기 때문에 block으로 변경 */
+* {margin: 0;padding: 0;}
+html, body {width: 100%;height: 100%;}
+html {overflow-y: scroll; scroll-behavior: smooth;overflow-x: hidden;}
+body {font-family: 'Montserrat, Noto Sans KR', sans-serif;}
 article,aside,details,summary,figcaption,figure,
-footer,header,hgroup,main,nav,section {
-  display: block;
+footer,header,hgroup,main,nav,section {display: block;}
+li {list-style-type: none;}  
+a {text-decoration: none;color: inherit;} 
+table {border-collapse: collapse;   }
+input, select {vertical-align: middle;}
+
+
+
+/* header  */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 110px;
+  z-index: 200;
 }
 
-li {list-style-type: none;}   /* 목록에 점 없애기 */
-
-a {
-  text-decoration: none;      /* 하이퍼링크 밑줄 없애기 */
-  color: inherit;             /* 하이퍼링크의 글자색 부모한테 상속받기 */
-                              /* a태그까지 오지 않고 부모에서도 적용 가능 -> ul li {} */
-} 
-
-table {
-  border-collapse: collapse;   /* 표의 더블선 제거 */
+.top i {
+  background-color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  right: 50px;
+  bottom: 58px;
+  color: #333;
+  z-index: 10000;
+  font-size: 30px;
+  font-weight: 100;
+  border-radius: 50%;
+  padding: 10px;
+}
+.top i:hover {
+  background-color: #333;
+  color: #fff;
 }
 
-input, select {
-  vertical-align: middle;
-  /* 문자와 나란히 입력박스를 배치하면 높낮이가 맞지 않아 맞추기 위함 */     
+
+nav {
+ width: 100%;
+ margin: auto;
+ height: inherit;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ padding-left: 30px;
+ position: relative;
+}
+.logo {
+  position: absolute;
+}
+.logo a img {
+  width: 45px;
+  height: 45px;
+}
+.logo a img:hover {
+  opacity: 0.75;
+}
+.gnb {
+  left: 100px;
+  margin-top: 80px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  height: inherit;
+}
+.gnb .main {
+  text-align: center;
+  margin-right: 14px;
+  width: 100px;
+}
+.gnb .main>a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  box-sizing: border-box;
+  line-height: 27px;
+}
+.gnb>.main:hover>a{
+  color: #3fcbf9;
 }
 
-.clear:after {                /* float문제 해결 */
-  content: "";
-  display: block;
-  clear: both;
+
+.submenu {
+  margin-top: 10px;
+  font-size: 14px;
+  display: none;
+  width: 150px;
+  transform: translateX(-20px);
+}
+.submenu li {
+  text-align: center;
+  height: 37px;
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.submenu li a {
+  color: #eee;
+  font-size: 14px;
+  font-weight: 500;
+}
+.submenu li a:hover  {
+  color: #3fcbf9;
 }
 
-.indent {                     /* 글자 안보이게 밀어 놓기 */
-  display: block;
-  text-indent: -9999px;
+.fontIcon {
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  right: 100px;
+}
+.fontIcon i {
+  margin-right: 25px;
+}
+.fontIcon i:nth-of-type(4) {
+  font-weight: 900;
+}
+.fontIcon .fa:hover {
+  color: rgb(0, 168, 224);
+  cursor: pointer;
 }
