@@ -994,6 +994,42 @@
 /* 작은 PC */
 @media (min-width : 1024px) and (max-width : 1440px) {
 
+/* 공통 */
+
+.brew>div.brew_mainImg:after,
+.brew>div.brew_mainImg,
+.brew>div.brew_mainImg:before,
+.brew>div.brew_total>div.brew_center,
+.brew>div.brew_total>div.brew_center>ul.brew,
+.cafe>div.storeTitle>div.storeImgTitle,
+footer>.footer_textImg,
+.about>div.aboutText,
+.cafe>div.storeTitle,
+footer>.footerMenu .footer_menu,
+.brew>div.brew_total>div.brew_center>div.brews>div.title_flex
+ {width: 100%;}
+
+ .cafe>div.storeTitle>div.storeImgTitle .firstTitle {position: static;}
+ .cafe>div.storeTitle>div.cafeImgTotal .storeText {box-sizing: border-box;}
+ .brew>div.brew_total>div.brew_center>ul.brew>li label {width: auto;}
+
+
+
+
+
+
+
+/* shop */
+
+
+
+/* brew */
+
+/* service */
+
+/* contact */
+
+
 
 }
 
