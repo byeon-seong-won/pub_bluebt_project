@@ -1007,30 +1007,62 @@ footer>.footer_textImg,
 .cafe>div.storeTitle,
 footer>.footerMenu .footer_menu,
 .brew>div.brew_total>div.brew_center>div.brews>div.title_flex
- {width: 100%;}
+ {width: 100%;box-sizing: border-box;}
 
  .cafe>div.storeTitle>div.storeImgTitle .firstTitle {position: static;}
  .cafe>div.storeTitle>div.cafeImgTotal .storeText {box-sizing: border-box;}
  .brew>div.brew_total>div.brew_center>ul.brew>li label {width: auto;}
 
 
-
+section {background-color: #f9f6f0;}
 
 
 
 
 /* shop */
-
-
-
+.shop {margin-top: 0;height: 700px;}
+.shop>div.center,
+.about>div.aboutText>div.aboutTitle_flex {width : 100%}
+.about>div.aboutText>div.aboutTitle_flex .flex_icon>h5 {margin-left: 0;width: auto;}
+.about>div.aboutText>div.aboutTitle_flex {padding-left: 0}
+.mainImg>div.changeimg>ul>li>img, .mainImg>div.changeimg:before, .mainImg {height: auto;}
 /* brew */
-
+.brew>div.brew_total>div.brew_center>ul>li {flex: 1;}
+.brew>div.brew_total>div.brew_center>ul.brew>li label {width: 50%;}
+.cafe {height: auto;}
+.cafe>div.storeTitle>div.storeImgTitle .cafeBluebottle,
+.shop>div.center>div.menu_con_total, .shop>h2,
+.mainImg>div.index,
+.about>div.aboutText>div.aboutTitle_flex .flex_icon>h5 {display: none;}
+.cafe>div.storeTitle>div.cafeImgTotal .storeText {flex-direction: column;}
 /* service */
-
+.brew>div.brew_mainImg>span.mainText {width: 80%;}
 /* contact */
+.about>div.aboutText>div.aboutFlex>div.ABOUT>div {width: auto;}
+.about>div.aboutText>div.aboutFlex>div.ABOUT>div.about_textFlex {width: 100%;float: unset;}
+.about>div.aboutText>div.aboutFlex>div.ABOUT>div.about_textFlex p:after {display: none;}
+.about>div.aboutText {padding-top: 0;}
+.about>div.aboutText>div.aboutTitle_flex {display: block;}
+.about>div.aboutText>div.aboutTitle_flex .flex_icon .aboutFontIcon {right: 202px;bottom: 19px;}
 
+.about>div.aboutText>div.aboutTitle_flex {height: auto;}
+.about>div.aboutText>div.aboutFlex>div.ABOUT>div.about_textFlex .detailBox {padding: 0 100px;    text-align: center;}
+.about>div.aboutText>div.aboutFlex>div.ABOUT>div.about_textFlex .aboutSlick {left: 50%;
+  transform: translate(-50%, -50%);
+}
+.brew>div.brew_total>div.brew_center>div.brews>div.title_flex .left_text .bottom_pour {display: block;}
+.brew>div.brew_total>div.brew_center>div.brews>div.title_flex .left_text .bottom_pour>iframe {    transform: unset;}
+.brew>div.brew_total>div.brew_center>div.brews>div.title_flex .left_text .startGuide {display: none;}
+.about {margin-top: 310px;}
+.brew>div.brew_total>div.brew_center>div.brews>div.title_flex .left_text .bottom_pour>div h3 {margin-top: 75px;}
+.about>div.aboutText>div.aboutFlex {margin-top: 0;}
+.cafe>div.storeTitle {border-radius: 0;}
 
-
+.cafe>div.storeTitle>div.cafeImgTotal .storeText .storeImgFLex {display: none;}
+.cafe>div.storeTitle>div.storeImgTitle .firstTitle p:nth-of-type(1) {width: unset;margin-left: 0;}
+.cafe>div.storeTitle>div.storeImgTitle .firstTitle p:nth-of-type(2) {display: none;}
+.cafe>div.storeTitle>div.storeImgTitle .firstTitle p:nth-of-type(1) {width: 50%;margin: 40px auto 0;}
+.cafe>div.storeTitle>div.cafeImgTotal {margin-top: 105px;}
 }
 
 
