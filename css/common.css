@@ -199,7 +199,7 @@ nav {
 
 
 /* footer */
-footer {margin-top: 170px;width: 100%;background-color: #fdfbf7;}
+footer {padding-top: 170px;width: 100%;background-color: #fdfbf7;}
 footer>.footer_textImg {width: 1280px;padding-top: 50px;margin: auto;text-align: center;overflow: hidden;}
 footer>.footer_textImg>h3 {letter-spacing: -3px;font-size: 30px;color: #333;font-weight: 500;}
 footer>.footer_textImg>h4 {margin-top: 40px;font-size: 21px;color: #00a9e0;letter-spacing: -1px;font-weight: 500;}
@@ -241,3 +241,12 @@ footer>.footer_textImg>.footerImg .footerImg_img .slick-next:before {
 }
 footer>.footer_textImg>.footerImg .footerImg_img .slick-dots {display: none !important;}
 
+
+
+
+/* 작은 PC */
+@media (min-width : 1024px) and (max-width : 1440px) { 
+  footer>.footerMenu .footer_menu {padding:  40px;}
+
+
+}
