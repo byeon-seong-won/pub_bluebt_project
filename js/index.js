@@ -6,30 +6,13 @@ $(document).ready(function () {
       var scheight = $(document).scrollTop();
       var scwidth = $( window ).width();
 
-      if(scwidth >= 1281) {
-        if(scheight > 100){
-          $("header, .sub").css({"backgroundColor":"#fff"})
+        if(scheight > 60){
+          $("header").css({"backgroundColor":"#fff"})
           $(".gnb .main>a, .sub li a, .fontIcon").css({"color":"#333"})
-          console.log(scheight)
         } else {
-          $("header, .sub").css({"backgroundColor":"transparent"})
+          $("header").css({"backgroundColor":"transparent"})
           $(".gnb .main>a, .sub li a, .fontIcon").css({"color":"#fff"})
         }
-
-      } else if(scwidth >= 1024 && scwidth < 1281) {
-        if(scheight > 80){
-          $("header").css({"border-bottom":"1px solid #ddd"})
-        } else {
-          $("header").css({"border":"none"})
-        }
-
-      } else if(scwidth >= 320 && scwidth < 1024) {
-        if(scheight > 60){
-          $("header").css({"border-bottom":"1px solid #ddd"})
-        } else {
-          $("header").css({"border":"none"})
-        }
-      }
   });
 
 
