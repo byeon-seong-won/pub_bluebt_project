@@ -80,7 +80,7 @@ header {
   position: fixed;
   top: 0;
   height: 100px;
-  z-index: 200;
+  z-index: 50000;
   padding: 0 20px;
   width: 100%;
   box-sizing: border-box;
@@ -163,6 +163,7 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  padding: 0 10px;
 }
 .submenu li a {
   color: #eee;
@@ -206,7 +207,7 @@ footer>.footer_textImg>h3 {letter-spacing: -3px;font-size: 30px;color: #333;font
 footer>.footer_textImg>h4 {margin-top: 40px;font-size: 21px;color: #00a9e0;letter-spacing: -1px;font-weight: 500;}
 footer>.footer_textImg>.footerImg {margin: auto;}
 footer>.footer_textImg>.footerImg .footerImg_img {margin: auto;margin-top: 40px;position: relative;}
-footer>.footer_textImg>.footerImg .footerImg_img div {width: 1285px;height: 200px;}
+footer>.footer_textImg>.footerImg .footerImg_img div {width: 1400px;height: 200px;}
 footer>.footer_textImg>.footerImg .footerImg_img div img {position: relative;width: 250px;height: 200px;}
 
 footer>.footerMenu {margin-top: 100px;color: #fff;background-color: #464646;padding: 35px 0;}
@@ -251,7 +252,8 @@ footer>.footer_textImg>.footerImg .footerImg_img .slick-dots {display: none !imp
   .logo a img {display: none;border: 1px solid #000;}
   .gnb {left: 0;}
   .gnb .main {width: 60px;}
-
+  .submenu {transform: translateX(-50px);}
+  
 
 }
 
@@ -269,5 +271,16 @@ footer>.footer_textImg>.footerImg .footerImg_img .slick-dots {display: none !imp
 
 
 @media (max-width : 768px) {
+  header {height: 80px;background-color: #fff !important;}
+  .submenu {display: none !important;}
+  .gnb {margin-top: 55px}
+  .gnb .main>a {color: #333 !important;}
   .fontIcon {display: none;}
+  footer>.footerMenu .footer_menu {padding:  20px;flex-direction: column;}
+  footer>.footer_textImg>.footerImg .footerImg_img div {width: 900px;}
+  .top {display: none;}
+  footer>.footerMenu {padding: 0;}
+  footer>.footerMenu .footer_menu>h4 {padding-top: 20px;}
+  footer>.footerMenu .bottomFooter {padding: 20px;margin-top: 0;}
+  footer>.footerMenu .bottomFooter>span {display: block;margin-left: 0;margin-top: 10px;}
 }

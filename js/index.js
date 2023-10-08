@@ -1,18 +1,29 @@
 $(document).ready(function () {
 
 
+
+
   // 스크롤 시 헤더 밑줄
   $(window).scroll(function() {
-      var scheight = $(document).scrollTop();
-      var scwidth = $( window ).width();
 
-        if(scheight > 60){
+    var scheight = $(document).scrollTop();
+    var scwidth = $( window ).width();
+      if(scwidth >= 769) {
+        if(scheight > 100){
           $("header").css({"backgroundColor":"#fff"})
-          $(".gnb .main>a, .sub li a, .fontIcon").css({"color":"#333"})
+          $(".submenu").css({"backgroundColor":"#fff"})
+          $(".submenu li a").css({"color":"#333"})
+          $(".gnb .main>a, .fontIcon").css({"color":"#333"})
         } else {
-          $("header").css({"backgroundColor":"transparent"})
-          $(".gnb .main>a, .sub li a, .fontIcon").css({"color":"#fff"})
-        }
+          if(scwidth >= 769) {
+            $("header").css({"backgroundColor":"transparent"})
+            $(".submenu").css({"backgroundColor":"transparent"})
+            $(".submenu li a").css({"color":"#fff"})
+            $(".gnb .main>a, .sub li a, .fontIcon").css({"color":"#fff"})
+        } 
+      }
+    }
+
   });
 
 
@@ -22,11 +33,13 @@ $(document).ready(function () {
 
 
   // header - submenu
-  $(".main").hover(function() {
-    $(this).find(".submenu").stop().slideDown();
-  }, function() {
-    $(this).find(".submenu").stop().slideUp();
-  });
+
+    $(".main").hover(function() {
+      $(this).find(".submenu").stop().slideDown();
+    }, function() {
+      $(this).find(".submenu").stop().slideUp();
+    });
+  
 
 
 
@@ -167,5 +180,16 @@ $(document).ready(function () {
   });
 
  
+
+
+  // 브라우저 resize 처리
+  $(window).scroll(function() {
+    window.addEventListener("resize", function() {
+      $(window).scrollTop(0);
+    })
+  })
+
+
+
 
 });
