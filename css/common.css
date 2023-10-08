@@ -79,9 +79,11 @@ input, select {vertical-align: middle;}
 header {
   position: fixed;
   top: 0;
-  width: 100%;
-  height: 110px;
+  height: 100px;
   z-index: 200;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .top i {
@@ -110,7 +112,6 @@ nav {
  display: flex;
  justify-content: space-around;
  align-items: center;
- padding-left: 30px;
  position: relative;
 }
 .logo {
@@ -176,7 +177,7 @@ nav {
   display: inline-block;
   color: #fff;
   position: absolute;
-  right: 100px;
+  right: 0;
 }
 .fontIcon i {
   margin-right: 25px;
@@ -245,8 +246,28 @@ footer>.footer_textImg>.footerImg .footerImg_img .slick-dots {display: none !imp
 
 
 /* 작은 PC */
-@media (min-width : 1024px) and (max-width : 1440px) { 
+@media (min-width : 768px) and (max-width : 1440px) { 
   footer>.footerMenu .footer_menu {padding:  40px;}
+  .logo a img {display: none;border: 1px solid #000;}
+  .gnb {left: 0;}
+  .gnb .main {width: 60px;}
 
 
+}
+
+
+@media (min-width : 360px) and (max-width : 1023.99px) {
+  footer>.footerMenu .footer_menu {padding:  40px;}
+  .logo a img {display: none;border: 1px solid #000;}
+  .gnb {left: 0;}
+  .gnb .main {width: 60px;}
+
+  footer>.footer_textImg>.footerImg .footerImg_img div img {width: 200px;}
+  footer>.footer_textImg>.footerImg .footerImg_img {width: 100%;overflow: hidden;}
+  
+}
+
+
+@media (max-width : 768px) {
+  .fontIcon {display: none;}
 }
